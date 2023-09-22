@@ -1,38 +1,207 @@
 .App {
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(79, 78, 78) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav{
+  display: inline-flex;
+  color: #f9f9f9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.h1 {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.container-home {
+  justify-content: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  position: relative;
+  font-size: 35px;
+  margin-left: 50px;
+  color: rgb(255, 255, 255);;
+}
+
+
+.container-about {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  font-size: 35px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.container-skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center
+  ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.lang,
+.Database,
+.Frameworks {
+  width: 300px;
+  padding: 20px;
+  margin: 55px;
+  border-radius: 50px;
+  border-radius: 50px;
+  background: #4f4e4e;
+  box-shadow:  20px 20px 60px #434242,
+               -20px -20px 60px #5b5a5a;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(234, 232, 232);
+  transition: transform 0.3s ease-in-out
+}
+
+.lang:hover,
+.Database:hover,
+.Frameworks:hover {
+  transform: scale(1.05)
+}
+
+.container-project {
+
+    perspective: 500px;
+
+  
+  .card {
+    width: 200px;
+    height: 250px;
+    background: #16161d;
+    border: 2px solid #555555;
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .card:hover {
+    transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+  }
+  
+  .card_title {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    transition: transform .5s;
+    font: 700 1.5rem monospace;
+    text-shadow: -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  }
+  
+  .card:hover .card_title {
+    transform: translateZ(50px);
   }
 }
+
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  }
+
+  .book {
+    position: relative;
+    border-radius: 10px;
+    width: 320px;
+    height: 400px;
+    background-color: rgb(247, 218, 181);
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+    margin-left: 65px;
+    margin-top: 20px;
+  }
+  
+  .book-title{
+    top: 0;
+    position: absolute;
+    background-color: #fadca3;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-image: url(https://www.joblo.com/wp-content/uploads/2021/05/rickmortypinball913.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .book:hover .book-title {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-87deg);
+    -ms-transform: rotatey(-87deg);
+    transform: rotatey(-87deg);
+    
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .titlerm {
+    background-color: rgb(255, 255, 255);
+    font-size: 25px;
+    position: absolute;
+    top: 20px;
+
+  }
+
+  @media screen and (max-width: 480px) {
+
+  }
+
+  .proname{
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+
+  }
+
+  a {
+    color: rgb(249, 154, 20)
+  }
+

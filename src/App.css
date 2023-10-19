@@ -4,7 +4,7 @@
 }
 
 body{
-  background-color: rgb(79, 78, 78) !important;
+  background-color: rgb(91, 91, 91) !important;
 }
 
 .nav{
@@ -25,9 +25,19 @@ body{
   font-size: 35px;
   margin-left: 50px;
   color: rgb(255, 255, 255);;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-
+#pic {
+  margin-top: 15px;
+  position: relative;
+  left: 42%;
+  width:15%;
+  height:13%; 
+  border-radius:290px; 
+  align-items :center; 
+}
 .container-about {
   justify-content: center;
   display: flex;
@@ -40,8 +50,9 @@ body{
 .container-skills {
   display: flex;
   flex-direction: row;
-  justify-content: center
-  ;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .lang,
@@ -108,8 +119,13 @@ body{
 }
 
 .project-container {
-  display: flex;
-  justify-content: space-between;
+    display: grid;
+      grid-template-columns: repeat(4, 2fr);
+      gap: 20px;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
   }
 
   .book {
@@ -142,6 +158,44 @@ body{
   .book-title{
     top: 0;
     position: absolute;
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .book:hover .book-title {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-87deg);
+    -ms-transform: rotatey(-87deg);
+    transform: rotatey(-87deg);
+    
+  }
+  /* PRO 2 */
+  .book-title2{
+    top: 0;
+    position: absolute;
     background-color: #fadca3;
     width: 100%;
     height: 100%;
@@ -169,7 +223,7 @@ body{
     background-position: center;
   }
   
-  .book:hover .book-title {
+  .book2:hover .book-title2 {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     -webkit-transform: rotatey(-87deg);
@@ -177,7 +231,14 @@ body{
     transform: rotatey(-87deg);
     
   }
-  
+  .titlerm2 {
+    background-color: rgb(255, 255, 255);
+    font-size: 25px;
+    position: absolute;
+    top: 20px;
+
+  }
+  /*  */
   p {
     font-size: 20px;
     font-weight: bolder;
@@ -205,3 +266,106 @@ body{
     color: rgb(249, 154, 20)
   }
 
+  .orange {
+    color: #ff7a01;
+  }
+  
+  .form-container {
+    max-width: 700px;
+    margin: 30px;
+    background-color: #001925;
+    padding: 30px;
+    border-left: 5px solid #ff7a01;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+    position: relative;
+    left: 30%;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .heading {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  .form-container .form .input {
+    color: #87a4b6;
+    width: 100%;
+    background-color: #002733;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    border-left: 1px solid transparent;
+  }
+  
+  .form-container .form .input:focus {
+    border-left: 5px solid #ff7a01;
+  }
+  
+  .form-container .form .textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #013747;
+    color: #ff7a01;
+    font-weight: bold;
+    resize: none;
+    max-height: 150px;
+    margin-bottom: 20px;
+    border-left: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form-container .form .textarea:focus {
+    border-left: 5px solid #ff7a01;
+  }
+  
+  .form-container .form .button-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .form-container .form .button-container .send-button {
+    flex-basis: 70%;
+    background: #ff7a01;
+    padding: 10px;
+    color: #001925;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form-container .form .button-container .send-button:hover {
+    background: transparent;
+    border: 1px solid #4f4f4f;
+    color: #ffffff;
+  }
+  
+  .form-container .form .button-container .reset-button-container {
+    filter: drop-shadow(1px 1px 0px rgb(91, 91, 91) );
+    flex-basis: 30%;
+  }
+  
+  .form-container .form .button-container .reset-button-container .reset-button {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    background: rgb(91, 91, 91) ;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form-container .form .button-container .reset-button-container .reset-button:hover {
+    background: #ffffff;
+    color: #001925;
+  }

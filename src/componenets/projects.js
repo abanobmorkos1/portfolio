@@ -6,7 +6,7 @@ function Projects () {
                 <h4>Tech Used:</h4>
                     <li>HTML5</li>
                     <li>css</li>
-                    <li>javaScript</li>
+                    <li>JavaScript</li>
                     <li>jQuery</li>
                 <h3><a href="https://abanobmorkos1-github-io.vercel.app/">Deployed site</a></h3>
             </section>

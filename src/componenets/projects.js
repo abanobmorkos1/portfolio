@@ -3,7 +3,7 @@ function Projects () {
         <div class="book">
             <section className="book.desc">
                 <p>An app that helps Rick and Morty fans find out more about the character</p>
-                <h4>tech used:</h4>
+                <h4>Tech Used:</h4>
                     <li>HTML5</li>
                     <li>css</li>
                     <li>javaScript</li>
@@ -19,7 +19,8 @@ function Projects () {
             <section className="book.desc">
                 <p>Car Social is a web application that looks to connect car enthusiasts and share their passion with one another
 </p>
-                <h4>tech used:</h4>
+                <h4>Tech Used:</h4>
+                    <li>HTML5</li>
                     <li>javaScript</li>
                     <li>CSS</li>
                     <li>Node.js</li>
@@ -37,14 +38,13 @@ function Projects () {
    <div class="book">
             <section className="book.desc">
                 <p>SafeHive is a web-based platform designed to empower communities to enhance safety and to report incidents.</p>
-                <h4>Tech used:</h4>
-                    <li>HTML5</li>
-                    <li>CSS</li>
-                    <li>Django</li>
-                    <li>Node</li>
-                    <li>React</li>
-                    <li>postgreSQL</li>
+                <h4>Tech Used:</h4>
                     <li>Python</li>
+                    <li>Django</li>
+                    <li>React</li>
+                    <li>CSS</li>
+                    <li>postgreSQL</li>
+                    <li>Node</li>
                 <h3><a href="https://safehive-fe.vercel.app/">Deployed site</a></h3>
             </section>
             <div style={{backgroundImage:"url(https://static-00.iconduck.com/assets.00/protect-icon-2048x2005-b7lv6fef.png)"}} class="book-title">
@@ -54,14 +54,14 @@ function Projects () {
             <div class="book">
             <section className="book.desc">
                 <p>TalkSpace a discussion app where users can post and engage in meaningful discussions.</p>
-                <h4>Tech used:</h4>
+                <h4>Tech Used:</h4>
                     <li>TypeScript</li>
                     <li>javaScript</li>
-                    <li>prisma</li>
-                    <li>mongodb</li>
-                    <li>Bootstrap</li>
                     <li>React</li>
                     <li>Express</li>
+                    <li>Bootstrap</li>
+                    <li>prisma</li>
+                    <li>mongodb</li>
                 <h3><a href="https://safehive-fe.vercel.app/">Deployed site</a></h3>
             </section>
             <div style={{backgroundImage:"url(https://static01.nyt.com/images/2023/09/21/multimedia/21sp-cli-space-01-wvmf/21sp-cli-space-01-wvmf-superJumbo.jpg)"}} class="book-title">

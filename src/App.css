@@ -17,7 +17,7 @@ body{
   justify-items: center;
 }
 
-.h1 {
+.h1 .h2 {
   font-family: 'Poppins', sans-serif;
 
 }
@@ -123,7 +123,7 @@ body{
 .project-container {
     display: grid;
       grid-template-columns: repeat(2, 2fr);
-      gap: 5px;
+      gap: 2px;
       text-align: center;
       padding: 10px;
       margin-top: 20px;
@@ -132,11 +132,7 @@ body{
       align-items: center 
   }
 
-  @media (max-width: 500px) {
-    .project-container {
-      grid-template-columns: 1fr;
-    }
-  }
+
   .book {
     position: relative;
     border-radius: 10px;
@@ -287,3 +283,12 @@ body{
   .rotating-text.active {
     opacity: 1;
   }
+
+.connect {
+  border-radius: 15px;
+  background-color: #4f4e4e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}

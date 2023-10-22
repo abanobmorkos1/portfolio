@@ -20,7 +20,7 @@ function Home () {
                 <ul><a href="https://github.com/abanobmorkos1">Github</a></ul>
                 <ul><a href="#About">About</a></ul>
                 <ul><a href="#skills">Skills</a></ul>
-                <ul><a href="https://docs.google.com/document/d/1qRXhOyg4RWC1xexjhpitSCZ82m7xmEzpcEheiRoNH_M/edit?usp=sharing1">Resume</a></ul>
+                <ul><a href="https://docs.google.com/document/d/e/2PACX-1vSY9OOoF9U8IGezdJig83ljOn4zZT3eGAseQ-iDGTrrbCkhYjkOSLCSuoDILIDGfR6jxO2EzTC-9uNx/pub">Resume</a></ul>
         </nav>
 
 

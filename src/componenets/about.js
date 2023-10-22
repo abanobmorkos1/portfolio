@@ -41,7 +41,7 @@ function Home () {
             <p> JavaScript</p>
             <p> HTML5</p>
             <p> Python</p>
-            <p>TypeScript</p>
+            <p> TypeScript</p>
             </div>
 
             <div className="Frameworks">

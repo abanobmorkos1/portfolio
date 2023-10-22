@@ -3,6 +3,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: rgb(91, 91, 91) !important;
 }
@@ -10,6 +14,7 @@ body{
 .nav{
   display: inline-flex;
   color: #f9f9f9;
+  justify-items: center;
 }
 
 .h1 {
@@ -23,7 +28,6 @@ body{
   flex-direction: column;
   position: relative;
   font-size: 35px;
-  margin-left: 50px;
   color: rgb(255, 255, 255);;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -80,8 +84,6 @@ body{
 
 .container-project {
 
-    perspective: 500px;
-
   
   .card {
     width: 200px;
@@ -108,9 +110,9 @@ body{
     transition: transform .5s;
     font: 700 1.5rem monospace;
     text-shadow: -1px -1px 0 #000,  
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-       1px 1px 0 #000;
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
   }
   
   .card:hover .card_title {
@@ -120,20 +122,27 @@ body{
 
 .project-container {
     display: grid;
-      grid-template-columns: repeat(4, 2fr);
-      gap: 20px;
+      grid-template-columns: repeat(2, 2fr);
+      gap: 5px;
       text-align: center;
       padding: 10px;
       margin-top: 20px;
       margin-bottom: 20px;
+      justify-items: center; 
+      align-items: center 
   }
 
+  @media (max-width: 500px) {
+    .project-container {
+      grid-template-columns: 1fr;
+    }
+  }
   .book {
     position: relative;
     border-radius: 10px;
-    width: 320px;
-    height: 400px;
-    background-color: rgb(247, 218, 181);
+    width: 420px;
+    height: 420px;
+    background-color: rgb(255, 255, 255);
     -webkit-box-shadow: 1px 1px 12px #000;
     box-shadow: 1px 1px 12px #000;
     -webkit-transform: preserve-3d;
@@ -151,7 +160,6 @@ body{
     -ms-flex-pack: center;
     justify-content: center;
     color: #000;
-    margin-left: 65px;
     margin-top: 20px;
   }
   
@@ -263,109 +271,19 @@ body{
   }
 
   a {
-    color: rgb(249, 154, 20)
+    color: rgb(0, 0, 0);
+    text-decoration: none;
   }
 
   .orange {
     color: #ff7a01;
   }
-  
-  .form-container {
-    max-width: 700px;
-    margin: 30px;
-    background-color: #001925;
-    padding: 30px;
-    border-left: 5px solid #ff7a01;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
-    position: relative;
-    left: 30%;
-    display: flex;
-    margin-bottom: 20px;
+
+  .rotating-text {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
   }
   
-  .heading {
-    display: block;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-  }
-  
-  .form-container .form .input {
-    color: #87a4b6;
-    width: 100%;
-    background-color: #002733;
-    border: none;
-    outline: none;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    transition: all 0.2s ease-in-out;
-    border-left: 1px solid transparent;
-  }
-  
-  .form-container .form .input:focus {
-    border-left: 5px solid #ff7a01;
-  }
-  
-  .form-container .form .textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    outline: none;
-    background-color: #013747;
-    color: #ff7a01;
-    font-weight: bold;
-    resize: none;
-    max-height: 150px;
-    margin-bottom: 20px;
-    border-left: 1px solid transparent;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .form-container .form .textarea:focus {
-    border-left: 5px solid #ff7a01;
-  }
-  
-  .form-container .form .button-container {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .form-container .form .button-container .send-button {
-    flex-basis: 70%;
-    background: #ff7a01;
-    padding: 10px;
-    color: #001925;
-    text-align: center;
-    font-weight: bold;
-    border: 1px solid transparent;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .form-container .form .button-container .send-button:hover {
-    background: transparent;
-    border: 1px solid #4f4f4f;
-    color: #ffffff;
-  }
-  
-  .form-container .form .button-container .reset-button-container {
-    filter: drop-shadow(1px 1px 0px rgb(91, 91, 91) );
-    flex-basis: 30%;
-  }
-  
-  .form-container .form .button-container .reset-button-container .reset-button {
-    position: relative;
-    text-align: center;
-    padding: 10px;
-    color: #ffffff;
-    font-weight: bold;
-    background: rgb(91, 91, 91) ;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .form-container .form .button-container .reset-button-container .reset-button:hover {
-    background: #ffffff;
-    color: #001925;
+  .rotating-text.active {
+    opacity: 1;
   }

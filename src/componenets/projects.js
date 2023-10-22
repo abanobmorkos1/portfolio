@@ -21,7 +21,7 @@ function Projects () {
 </p>
                 <h4>Tech Used:</h4>
                     <li>HTML5</li>
-                    <li>javaScript</li>
+                    <li>JavaScript</li>
                     <li>CSS</li>
                     <li>Node.js</li>
                     <li>Express</li>
@@ -56,7 +56,7 @@ function Projects () {
                 <p>TalkSpace a discussion app where users can post and engage in meaningful discussions.</p>
                 <h4>Tech Used:</h4>
                     <li>TypeScript</li>
-                    <li>javaScript</li>
+                    <li>JavaScript</li>
                     <li>React</li>
                     <li>Express</li>
                     <li>Bootstrap</li>

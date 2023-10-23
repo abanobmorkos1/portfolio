@@ -1,5 +1,5 @@
 function Projects () {
-    return  <div className="project-container">
+    return  <div id="projects" className="project-container">
         <div class="book">
             <section className="book.desc">
                 <p>An app that helps Rick and Morty fans find out more about the character</p>

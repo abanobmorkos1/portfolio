@@ -1,7 +1,7 @@
 import Img from '../astronaut.png'
 function Contact () {
     const img = Img
-    return <div id='connectt'className='connect'>
+    return <div id= 'connectt' className='connect'>
         <div>
             <img style={{width:"400px" , height:"400px"}}src={img}/>
             <h1>Let's connect </h1>

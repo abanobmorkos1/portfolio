@@ -15,6 +15,7 @@ body{
   display: inline-flex;
   color: #f9f9f9;
   justify-items: center;
+  margin-right: 59px;
 }
 
 .h1 .h2 {
@@ -122,16 +123,18 @@ body{
 
 .project-container {
     display: grid;
-      grid-template-columns: repeat(2, 2fr);
-      gap: 2px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
       text-align: center;
-      padding: 10px;
       margin-top: 20px;
       margin-bottom: 20px;
       justify-items: center; 
       align-items: center 
-  }
+}
 
+li {
+  text-decoration: none;
+}
 
   .book {
     position: relative;

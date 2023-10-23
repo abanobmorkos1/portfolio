@@ -1,12 +1,12 @@
 function Projects () {
-    return  <div className="project-container">
+    return  <div id="projects" className="project-container">
         <div class="book">
             <section className="book.desc">
                 <p>An app that helps Rick and Morty fans find out more about the character</p>
                 <h4>Tech Used:</h4>
                     <li>HTML5</li>
                     <li>css</li>
-                    <li>javaScript</li>
+                    <li>JavaScript</li>
                     <li>jQuery</li>
                 <h3><a href="https://abanobmorkos1-github-io.vercel.app/">Deployed site</a></h3>
             </section>
@@ -28,7 +28,7 @@ function Projects () {
                     <li>EJS </li>
                     <li>Mongo</li>
                     <li>Express</li>
-                <h3><a href="https://github.com/abanobmorkos1/Car-Soical">Deployed site</a></h3>
+                <h3><a href="https://project2-5847.onrender.com/user/signup">Deployed site</a></h3>
             </section>
             <div style={{backgroundImage:"url(https://wallpapercave.com/wp/wp8879567.jpg)"}} class="book-title">
                 <h3 className="titlerm">Car social</h3>

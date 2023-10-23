@@ -21,6 +21,8 @@ function Home () {
                 <ul><a href="https://github.com/abanobmorkos1">Github</a></ul>
                 <ul><a href="#About">About</a></ul>
                 <ul><a href="#skills">Skills</a></ul>
+                <ul><a href="#projects">Projects</a></ul>
+                <ul><a href="#connectt">Let's Connect</a></ul>
                 <ul><a href={Resume} target="_blank">Resume</a></ul>
         </nav>
 
